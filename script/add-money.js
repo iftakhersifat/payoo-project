@@ -1,23 +1,36 @@
-document.getElementById('add-money-btn').addEventListener('click', function(event){
+document.getElementById('add-money-btn').addEventListener('click', function(event) {
     event.preventDefault();
-    const amount =document.getElementById('amount-to-add').value;
-    // console.log(typeof amount);
-    const convertedAmount =parseFloat(amount);
 
-    const pin =document.getElementById('password').value;
-    const convertedPin =parseInt(pin);
+    // Get input values
+    const amount = document.getElementById('amount-to-add').value;
+    const convertedAmount = parseFloat(amount);
 
-    const totalBalance =document.getElementById('main-balance').innerText;
-    // console.log(typeof totalBalance);
-    const convertedTotalBalance =parseFloat(totalBalance);
+    const pin = document.getElementById('password').value;
+    const convertedPin = parseInt(pin);
 
+    const totalBalance = document.getElementById('main-balance').innerText;
+    const convertedTotalBalance = parseFloat(totalBalance);
 
-    if(convertedPin === 1234){
-        const sum =convertedAmount + convertedTotalBalance;
-        document.getElementById('main-balance').innerText = sum;
-        // console.log(sum);
-    } 
-    else{
-        console.log('pin is incorrect');
+    // Get bank account number correctly
+    const account = document.getElementById('mobile-number').value; // Keep it as a string
+
+    // Validate account number length
+    if (account.length === 11) {
+        // Validate PIN
+        if (convertedPin === 1234) {
+            const sum = convertedAmount + convertedTotalBalance;
+            document.getElementById('main-balance').innerText = sum;
+
+            // Add transaction log
+            const container = document.getElementById('transaction-container');
+            const p = document.createElement('p');
+            p.innerText = `Added ${amount} from ${account} account`;
+            container.appendChild(p);
+
+        } else {
+            console.log('Pin is incorrect');
+        }
+    } else {
+        console.log('Invalid account number. Must be 11 digits.');
     }
-})
+});
