@@ -12,7 +12,8 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     const convertedTotalBalance = parseFloat(totalBalance);
 
     // Get bank account number correctly
-    const account = document.getElementById('mobile-number').value; // Keep it as a string
+    const account = document.getElementById('mobile-number').value;
+    
 
     // Validate account number length
     if (account.length === 11) {
@@ -24,7 +25,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
             // Add transaction log
             const container = document.getElementById('transaction-container');
             const p = document.createElement('p');
-            p.innerText = `Added ${amount} from ${account} account`;
+            p.innerText = `Added ${amount} from this ${account} account number`;
             container.appendChild(p);
 
         } else {
