@@ -124,7 +124,51 @@
                   </div>
              </section>
 
-             
+             <!-- add cash out section -->
+             <section id="cashOut">
+                <h1 class="text-2xl font-bold mb-8 p-4 md:p-0">Cash Out</h1>
+                <!-- form section -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card w-[380px] shadow-2xl">
+                        <form class="card-body">
+                            
+                            <!-- digit input section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Agent Number</span>
+                                  </label>
+                                  <input value="" id="mobile-number" type="mobile number" placeholder="Enter 11 digit number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                </div>
+
+                                <!-- amount input section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Amount</span>
+                                  </label>
+                                  <input value="" id="cashOut-amount" type="number" placeholder="Enter amount to withdraw" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                </div>
+
+                                <!-- pin input section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                  </label>
+                                  <input value="" id="pins" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                  <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                  </label>
+                                </div>
+
+                                <div class="form-control mt-6">
+                                  <button id="cashOut-btn" class="btn bg-btn-primary text-white rounded-3xl">Withdraw Money</button>
+                                </div>
+                              </form>
+
+                      </div>
+                    </div>
+                  </div>
+             </section>
             
         
     </section>
