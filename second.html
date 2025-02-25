@@ -41,7 +41,7 @@
                 <h1 class="text-3xl font-bold">$ <span id="main-balance">45000</span></h1>
                 <p class="text-gray-500">Available Balance</p>
             </div>
-            <button class="btn w-[110px] hover:bg-red-500 hover:text-white py-2 px-4 text-gray-500 border border-[#DAA520] rounded-xl">Log Out<i class="fa-solid fa-arrow-right-from-bracket"></i></i></button>
+            <button id="logOut-btn" class="btn w-[110px] hover:bg-red-500 hover:text-white py-2 px-4 text-gray-500 border border-[#DAA520] rounded-xl">Log Out<i class="fa-solid fa-arrow-right-from-bracket"></i></i></button>
             
             </nav>
             <hr>
@@ -201,5 +201,11 @@
     <script src="script/add-money.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+
+    <script>
+        document.getElementById('logOut-btn').addEventListener('click', function(){
+            window.location.href = 'index.html';
+        })
+    </script>
 </body>
 </html>
