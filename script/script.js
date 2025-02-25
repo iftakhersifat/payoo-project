@@ -1,5 +1,4 @@
 document.getElementById('login-btn').addEventListener('click', function(event){
-    // console.log('login');
     event.preventDefault();
 
     const mobile = document.getElementById('mobile-number').value;
