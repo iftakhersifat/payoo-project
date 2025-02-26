@@ -14,15 +14,16 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
     // Get bank account number correctly
     const account = document.getElementById('mobile-number').value;
     
+    const selectBank =document.getElementById('bank-select').value;
+    console.log(selectBank);
 
-    // Validate account number length
+
+
     if (account.length === 11) {
-        // Validate PIN
         if (convertedPin === 1234) {
             const sum = convertedAmount + convertedTotalBalance;
             document.getElementById('main-balance').innerText = sum;
 
-            // Add transaction log
             const container = document.getElementById('transaction-container');
             const p = document.createElement('p');
             p.innerText = `Added ${amount} from this ${account} account number`;
