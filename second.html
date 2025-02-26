@@ -279,7 +279,7 @@
                       <!-- select -->
                       <form class="card-body">
                           <legend>Select A Bank</legend>
-                          <select id="bank-select" class="select select-bordered w-full max-w-xs rounded-2xl bg-gray-50">
+                          <select id="bankSelect-for-payBill" class="select select-bordered w-full max-w-xs rounded-2xl bg-gray-50">
                               <option disabled selected>Select To Pay</option>
                               <option value="Bkash">Bkash</option>
                               <option value="Nagad">Nagad</option>
@@ -291,7 +291,7 @@
                                 <label class="label">
                                   <span class="label-text">Biller Account Number</span>
                                 </label>
-                                <input value="" id="mobile-number" type="mobile number" placeholder="Enter account number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                <input value="" id="payBill-mobile-number" type="mobile number" placeholder="Enter account number" class="input input-bordered rounded-2xl bg-gray-50" required />
                               </div>
 
                               <!-- amount section -->
@@ -299,7 +299,7 @@
                                 <label class="label">
                                   <span class="label-text">Amount to Pay</span>
                                 </label>
-                                <input value="" id="amount-to-add" type="number" placeholder="Add Amount to pay" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                <input value="" id="payBill-amount" type="number" placeholder="Add Amount to pay" class="input input-bordered rounded-2xl bg-gray-50" required />
                               </div>
 
                               <!-- pin number section -->
@@ -307,7 +307,7 @@
                                 <label class="label">
                                   <span class="label-text">Pin Number</span>
                                 </label>
-                                <input value="" id="password" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                <input value="" id="payBill-pin" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl bg-gray-50" required />
                                 <label class="label">
                                   <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
                                 </label>
@@ -332,6 +332,7 @@
     <script src="script/cashout.js"></script>
     <script src="script/send-money.js"></script>
     <script src="script/get-bonus.js"></script>
+    <script src="script/pay-bill.js"></script>
     
 
     <script>
