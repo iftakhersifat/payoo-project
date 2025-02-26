@@ -17,7 +17,9 @@ document.getElementById("bonus-btn").addEventListener("click", function(event) {
 
     const totalBonus = totalBalance + bonus;
     document.getElementById("main-balance").innerText = totalBonus;
+    
 
     alert(`🎉 Coupon applied! You received ${bonus.toFixed(2)} bonus.`);
     
 });
+

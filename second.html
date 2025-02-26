@@ -246,6 +246,7 @@
              <!-- Get Bonus Section -->
              <section id="get-bonus">
               <h1 class="text-2xl font-bold mb-2 p-4 md:p-0">Get Bonus</h1>
+              
               <!-- Enter Bonus Coupon Section -->
               <div class="hero">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -268,6 +269,61 @@
                             </div>
              </section>
 
+             <!-- pay bill section -->
+             <section id="payBill">
+              <h1 class="text-2xl font-bold mb-2 p-4 md:p-0">Pay Bill</h1>
+              <!-- form section -->
+              <div class="hero mb-8">
+                  <div class="hero-content flex-col lg:flex-row-reverse">    
+                    <div class="card w-[380px] border border-[#DAA520] shadow-2xl">
+                      <!-- select -->
+                      <form class="card-body">
+                          <legend>Select A Bank</legend>
+                          <select id="bank-select" class="select select-bordered w-full max-w-xs rounded-2xl bg-gray-50">
+                              <option disabled selected>Select To Pay</option>
+                              <option value="Bkash">Bkash</option>
+                              <option value="Nagad">Nagad</option>
+                              <option value="DBBL">DBBL</option>
+                            </select>
+
+                            <!-- biller account input section -->
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Biller Account Number</span>
+                                </label>
+                                <input value="" id="mobile-number" type="mobile number" placeholder="Enter account number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                              </div>
+
+                              <!-- amount section -->
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Amount to Pay</span>
+                                </label>
+                                <input value="" id="amount-to-add" type="number" placeholder="Add Amount to pay" class="input input-bordered rounded-2xl bg-gray-50" required />
+                              </div>
+
+                              <!-- pin number section -->
+                              <div class="form-control">
+                                <label class="label">
+                                  <span class="label-text">Pin Number</span>
+                                </label>
+                                <input value="" id="password" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                <label class="label">
+                                  <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                </label>
+                              </div>
+
+                              <!-- button section -->
+                              <div class="form-control mt-6">
+                                <button id="payBill-btn" class="btn bg-btn-primary text-white rounded-3xl text-[18px]">Pay Now</button>
+                              </div>
+                            </form>
+
+                    </div>
+                  </div>
+                </div>
+           </section>
+
               
         
     </section>
@@ -276,6 +332,7 @@
     <script src="script/cashout.js"></script>
     <script src="script/send-money.js"></script>
     <script src="script/get-bonus.js"></script>
+    
 
     <script>
         document.getElementById('logOut-btn').addEventListener('click', function(){
