@@ -29,7 +29,7 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
             // p.innerText = `Added ${amount} from this ${account} account number`;
             // container.appendChild(p);
             const div =document.createElement('div');
-            div.classList.add('border-[#DAA520]', 'border-2', 'rounded-2xl', 'bg-white' , 'p-4', 'bg-gray-50');
+            div.classList.add('border-[#DAA520]', 'border-2', 'rounded-2xl', 'bg-white' , 'p-4', 'bg-gray-50', 'mb-5');
             div.innerHTML=`
              <div class="flex items-center gap-4">
             <img class="rounded-full bg-gray-100 w-[80px] p-3" src="assets/purse1.png" alt="">
