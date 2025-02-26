@@ -25,9 +25,23 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
             document.getElementById('main-balance').innerText = sum;
 
             const container = document.getElementById('transaction-container');
-            const p = document.createElement('p');
-            p.innerText = `Added ${amount} from this ${account} account number`;
-            container.appendChild(p);
+            // const p = document.createElement('p');
+            // p.innerText = `Added ${amount} from this ${account} account number`;
+            // container.appendChild(p);
+            const div =document.createElement('div');
+            div.classList.add('border-[#DAA520]', 'border-2', 'rounded-2xl', 'bg-white' , 'p-4', 'bg-gray-50');
+            div.innerHTML=`
+             <div class="flex items-center gap-4">
+            <img class="rounded-full bg-gray-100 w-[80px] p-3" src="assets/purse1.png" alt="">
+
+            <div class="flex flex-col">
+            <h1 class="font-semibold">Add Money from ${selectBank}</h1>
+            <h1 class="text-lg font-bold">${amount}</h1>
+            <h1 class="text-sm text-gray-600">Account number: ${account}</h1>
+        </div>
+    </div>
+            `
+            container.appendChild(div);
 
         } else {
             console.log('Pin is incorrect');
