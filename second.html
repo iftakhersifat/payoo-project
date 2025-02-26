@@ -65,7 +65,7 @@
                     <h2 class="text-center font-semibold text-gray-500">Cashout</h2>
                 </div>
                 <!-- 3rd card -->
-                <div class="border border-2 p-4 rounded-xl  h-[100px] space-y-2 hover:bg-blue-100 hover:border-sky-600">
+                <div id="sendMoney-card" class="border border-2 p-4 rounded-xl  h-[100px] space-y-2 hover:bg-blue-100 hover:border-sky-600">
                     <img class="mx-auto" src="assets/money1.png" alt="">
                     <h2 class="text-center font-semibold text-gray-500">Transfer Money</h2>
                 </div>
@@ -195,12 +195,60 @@
 
                 </div>
               </section>
-            
+
+              <!-- send money section -->
+              <section id="sendMoney">
+                <h1 class="text-2xl font-bold mb-2 p-4 md:p-0">Transfer Money</h1>
+
+                <!-- form section -->
+                <div class="hero">
+                    <div class="hero-content flex-col lg:flex-row-reverse">
+                      <div class="card w-[380px] border border-[#DAA520] shadow-2xl mb-8">
+                        <form class="card-body">
+                            
+                            <!-- User Account Number Section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">User Account Number</span>
+                                  </label>
+                                  <input value="" id="user-account" type="mobile-number" placeholder="Enter 11 digit number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                </div>
+
+                                <!-- Amount Section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Amount</span>
+                                  </label>
+                                  <input value="" id="sendMoney-amount" type="number" placeholder="Enter amount to transfer" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                </div>
+
+                                <!-- pin input section -->
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Pin Number</span>
+                                  </label>
+                                  <input value="" id="sendMoney-pin" type="password" placeholder="Enter 4 digit pin number" class="input input-bordered rounded-2xl bg-gray-50" required />
+                                  <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                  </label>
+                                </div>
+
+                                <div class="form-control mt-6">
+                                  <button id="sendMoney-btn" class="btn bg-btn-primary text-white rounded-3xl text-[18px]">Send Now</button>
+                                </div>
+                              </form>
+
+                      </div>
+                    </div>
+                  </div>
+             </section>
+              
         
     </section>
     <script src="script/add-money.js"></script>
     <script src="script/toggle.js"></script>
     <script src="script/cashout.js"></script>
+    <script src="script/send-money.js"></script>
 
     <script>
         document.getElementById('logOut-btn').addEventListener('click', function(){

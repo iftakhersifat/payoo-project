@@ -21,6 +21,10 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
 
     if (account.length === 11) {
         if (convertedPin === 1234) {
+            if (sendMoneyAmount > totalBalance) {
+                alert('Insufficient balance!');
+                return;
+            }
             const sum = convertedAmount + convertedTotalBalance;
             document.getElementById('main-balance').innerText = sum;
 
