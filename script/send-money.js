@@ -29,7 +29,7 @@ document.getElementById('sendMoney-btn').addEventListener('click', function(even
         </div>
     </div>`
             container.appendChild(div);
-            alert(`Successfully sent ${sendMoneyAmount} to ${userAccount}!`);
+            alert(`✅ Successfully sent ${sendMoneyAmount} to ${userAccount}!`);
 
         } else{
             alert('bkash theke nahid bolse');

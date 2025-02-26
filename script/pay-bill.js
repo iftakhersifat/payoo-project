@@ -28,7 +28,7 @@ document.getElementById('payBill-btn').addEventListener('click', function(event)
 
             const container = document.getElementById('transaction-container');
             const div =document.createElement('div');
-            div.classList.add('border-[#DAA520]', 'border-2', 'rounded-2xl', 'bg-white' , 'p-4', 'bg-gray-50', 'mb-5');
+            div.classList.add('border-[#DAA520]', 'border-2', 'rounded-2xl', 'bg-white' , 'p-4', 'bg-gray-50', 'mt-5');
             div.innerHTML=`
              <div class="flex items-center gap-4">
             <img class="rounded-full bg-gray-100 w-[80px] p-3" src="assets/purse1.png" alt="">

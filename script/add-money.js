@@ -47,6 +47,8 @@ document.getElementById('add-money-btn').addEventListener('click', function(even
             `
             container.appendChild(div);
 
+            alert(`✅ Add Money successfully from ${selectBank}. Amount: ${amount}`);
+
         } else {
             console.log('Pin is incorrect');
         }
